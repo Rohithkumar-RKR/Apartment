@@ -1,0 +1,127 @@
+$primary:#f5d33b;
+$secondary:#000000;
+$light:#FCA7A5;
+$warning:#5A3E79;
+
+// @import "../../node_modules/bootstrap/scss/functions";
+// @import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+    "first":#756504,
+    "second":#ffffff,
+    "$light" : #FCA7A5,
+    "warning" : #5A3E79,
+);
+$custom-theme-colors:map-merge($custom-theme-colors, $theme-colors);
+$first:#756504;
+$second:#ffffff;
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+  //color:#843e1c
+// .navbar{
+//     background-color: #ece3cdde;
+// }
+
+//   .nav-link{
+//     color: #A76286;
+//     font-weight: 500;
+//     padding:20px 20px;
+//     margin: 0 10px;
+//   }
+
+ .line{
+  border-bottom: #000000;
+  border-style: solid;
+  border-width: 3px;
+  width:50px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+ #header{
+  color:#843e1c;
+ }
+ #configuration{
+background-color:#843e1c;
+padding:20px 0px
+
+ }
+
+ #sec-head{
+color: #ffffff;
+text-transform: uppercase;
+letter-spacing: 8px;
+margin-bottom: 10px;
+ }
+
+ .head-line{
+  border-bottom: #000000;
+  border-style: solid;
+  border-width: 3px;
+  width:60px;
+  margin: auto;
+ }
+ #around{
+  background-color: #843e1c;
+ }
+ .aroundline{
+  border-bottom:black;
+ }
+ .linee{
+  border-bottom: #f7f5f5;
+  border-style: solid;
+  border-width: 2px;
+  width:60px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+ }
+
+ .wrap{
+  border: 6px solid whitesmoke;
+  border-bottom: 10px solid white;
+  margin-bottom: 20px;
+ }
+ .amen{
+  text-transform: uppercase;
+ }
+ .amenities-gallery{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: all .5s;
+  border: none;
+ }
+ .amenities-gallery img{
+    width: 100%;
+    margin-bottom: -2px;
+    transition: all .5s;
+ }
+ .ami-overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  transform: translate(-100%, 0);
+  transition: all 1s;
+ }
+// .fa-map-marker:before{
+// content:"f041" ;
+// }
+#fixedimage{
+  background-image: url(../images/con_1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.para{
+  font-size: 18px;
+}
+.write{
+  font-size: 0.8rem;
+}
+
