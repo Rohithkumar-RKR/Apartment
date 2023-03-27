@@ -5,34 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asset/css/Style.css">
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 <body>
-      <nav class="navbar navbar-expand-lg bg-primary">
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <img src="./asset/images/logo.png" class="img-fluid m-2" style="width:170px;height: 70px;" alt="">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0  "id="navtext">
+              <li class="nav-item mx-2">
+                <a class="nav-link active text-black" id="text" href="#home">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+              <li class="nav-item mx-2" >
+                <a class="nav-link" id="text" aria-current="page" href="#section3">Configuration</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+              <li class="nav-item mx-2">
+                <a class="nav-link" id="text"href="#ament">Amenties</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link"id="text" href="#gall">Gallery</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" id="text"href="#location">Location</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" id="text"href="#fixedimage">Contact us</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
+      <section class="section3" id="home">
+        <div class="container-fluid">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./asset/images/slider/1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./asset/images/slider/2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./asset/images/slider/3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
 <section class="section2 py-3 py-md-4">
   <div class="container">
     <div class="row text-center">
@@ -43,7 +83,7 @@
         With the launch of Brigade El Dorado, it has become easier than ever to #StrikeGold and revel in a life of good taste and comfort. So why settle for anything less, when you can enjoy the highly rewarding experience of living in one of the finest properties crafted by Brigade.</p>
       </div>
       </div>
-      <div class="row gy-3 mt-2 justify-content-center">
+      <div class="row gy-3 mt-2 justify-content-center ">
           <div class="col-md-2 text-center col-xs-6 col-6">
             <div class="bg-white shadow py-3">
                 <img src="./asset/images/icon/2.png" class="img-fluid" style="width: 64px; height: 64px;" alt="">
@@ -58,7 +98,7 @@
           <div class="col-md-2 text-center col-xs-6 col-6">
             <div class="bg-white shadow py-3">
                 <img src="./asset/images/icon/3.png" class="img-fluid" style="width: 64px; height: 64px;" alt="">
-                <p>
+                <p class="mb-0">
                   <b>40-acres</b>
                   <br> of Open Space <br>
                  
@@ -71,8 +111,9 @@
                 <p>
                   <b>10-acres</b>
                   <br>
-                  Central Park & Sports Facilities
-                  <br>
+                  Central Park & 
+                  Sports Facilities
+                  
                 </p>
             </div>
           </div>
@@ -100,14 +141,14 @@
           </div>
      </div>
 </section> 
-<section class="section3 py-3 py-md-4">
+<section class="section3 py-3 py-md-4" id="section3">
 <div id="configuration">
   <div class="container">
     <div class="row text-center">
       <div class="col-md-12">
         <h2 id="sec-head">configuration</h2>
       </div>
-      <div class="head-line mb-3"></div>
+      <div class="mb-3" id="head-line"></div>
     </div>
     <div class="row text-center">
       <div class="col-md-3 col-xs-6 col-6">
@@ -150,7 +191,7 @@
   </div>   
 </div>
 </section>
-<section class="section3 py-3 py-md-5">
+<section class="section3 py-3 py-md-5" id="ament">
   <div class="container">
     <div class="row">
     <div class="col-md-12 text-center">
@@ -160,29 +201,41 @@
     </div>
     <div class="row mb-3 g-3">
         <div class="col-md-4">
-          <img src="./asset/images/gallery/ame/2.jpg" class="img-fluid" alt="">
+          <div class="zoom">
+            <img src="./asset/images/gallery/ame/2.jpg" class="img-fluid" alt="">
+          </div>
         </div>
         <div class="col-md-4">
+          <div class="zoom">
           <img src="/asset/images/gallery/ame/3.jpg" class="img-fluid" alt="">
         </div>
+        </div>
         <div class="col-md-4">
+          <div class="zoom">
           <img src="/asset/images/gallery/ame/4.jpg" class="img-fluid" alt="">
+        </div>
         </div>
      </div>
      <div class="row g-3">
       <div class="col-md-4">
+        <div class="zoom">
         <img src="./asset/images/gallery/ame/5.jpg" class="img-fluid" alt="">
       </div>
-      <div class="col-md-4">
-        <img src="/asset/images/gallery/ame/6.jpg" class="img-fluid" alt="">
       </div>
       <div class="col-md-4">
+        <div class="zoom">
+        <img src="/asset/images/gallery/ame/6.jpg" class="img-fluid" alt="">
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div class="zoom">
         <img src="/asset/images/gallery/ame/8.jpg" class="img-fluid" alt="">
+      </div>
       </div>
     </div>
   </div>
 </section>
-<section class="section4 py-3 py-md-5">
+<section class="section4 py-3 py-md-5" id="gall">
   <div id="configuration" class="pb-4">
      <div class="container">
       <h3 class="amen text-center text-white">Gallery</h3>
@@ -193,44 +246,44 @@
       </div>
       <div class="row mb-2 mt-2 gy-3">
         <div class="col-md-3">
-          <div>
+          <div class="zoom">
             <img src="./asset/images/gallery/gal/1.jpg" class="img-fluid" alt="">
           </div>
         </div>
         <div class="col-md-3">
-          <div>
+          <div class="zoom">
             <img src="./asset/images/gallery/gal/4.jpg" class="img-fluid" alt="">
           </div>
         </div>
         <div class="col-md-3">
-          <div>
+          <div class="zoom">
             <img src="./asset/images/gallery/gal/10.jpg" class="img-fluid" alt="">
           </div>
         </div>
         <div class="col-md-3">
-          <div>
+          <div class="zoom">
             <img src="./asset/images/gallery/gal/5.jpg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
       <div class="row pt-1 gy-3">
         <div class="col-md-3">
-          <div>
+          <div class="zoom">
             <img src="./asset/images/gallery/gal/7.jpg" class="img-fluid" alt="">
           </div>
         </div>
         <div class="col-md-3">
-          <div>
+          <div class="zoom">
             <img src="./asset/images/gallery/gal/9.jpg" class="img-fluid" alt="">
           </div>
         </div>
         <div class="col-md-3">
-          <div>
+          <div class="zoom">
             <img src="./asset/images/gallery/gal/11.jpg" class="img-fluid" alt="">
           </div>
         </div>
         <div class="col-md-3">
-          <div>
+          <div class="zoom">
             <img src="./asset/images/gallery/gal/1.jpg" class="img-fluid" alt="">
           </div>
         </div>
@@ -238,13 +291,13 @@
      </div>
   </div>
 </section>
-<section class="section5 py-2 py-md-3">
+<section class="section5 py-2 pb-4 py-md-4" id="location">
   <div class="container">
     <h3 class="amen text-center ">Unbeatable location</h3>
     <div class="line mb-2"></div>
     <div class="row justify-content-center">
       <div class="col-md-8">
-        <div>
+        <div class="zoomin">
           <img src="./asset/images/img-2sec.jpg" class="img-fluid" alt="">
         </div>
       </div>
@@ -255,7 +308,7 @@
   <div class="container">
     <h3 class="amen text-center text-black">Contact Us</h3>
       <div class="linee bg-black mb-2"></div>
-    <div class="row gy-3">
+    <div class="row justify-content-center">
       <div class="col-md-6">
         <form class="bg-white p-4 rounded-3">
           <div class="mb-2">
@@ -278,12 +331,12 @@
         </form>
       </div>
     
-      <div class="col-md-6">
+      <!-- <div class="col-md-6">
         <div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62164.587959458884!2d77.684441!3d13.144304!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1b866e055a1b%3A0xcb5508a6a3f94f33!2sBrigade%20El%20Dorado!5e0!3m2!1sen!2sin!4v1678456759455!5m2!1sen!2sin" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <h2 class="text-center text-white pt-3">Site Address</h2>
     <p class="text-center text-white para">Brigade El Dorado Aerospace Park, Near Shell Office, Huvinayakanahalli, Bengaluru, Karnataka 562149</p>
   </div>
@@ -302,5 +355,7 @@
   </div>
 
 </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

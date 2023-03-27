@@ -1,22 +1,28 @@
-$primary:#f5d33b;
+$primary:#f1cf38;
 $secondary:#000000;
 $light:#FCA7A5;
 $warning:#5A3E79;
 
 // @import "../../node_modules/bootstrap/scss/functions";
 // @import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/functions";
+// @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
+
 $custom-theme-colors: (
-    "first":#756504,
+    "first":#f1cf38,
     "second":#ffffff,
-    "$light" : #FCA7A5,
-    "warning" : #5A3E79,
+    "third" : #FCA7A5,
+    "fourth" : #5A3E79,
 );
 $custom-theme-colors:map-merge($custom-theme-colors, $theme-colors);
-$first:#756504;
+$first:#f1cf38;
 $second:#ffffff;
+$third:#FCA7A5;
+$fourth:#5A3E79;
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";npm install bootstrap@5.2.3
 // @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -31,6 +37,19 @@ $second:#ffffff;
 //     padding:20px 20px;
 //     margin: 0 10px;
 //   }
+#navbar{
+  background-color:#f1cf38
+}
+#navtext{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#text{
+  color: #f7f5f5;
+}
+#text:hover{
+  color: #7733c5;
+}
 
  .line{
   border-bottom: #000000;
@@ -57,10 +76,10 @@ letter-spacing: 8px;
 margin-bottom: 10px;
  }
 
- .head-line{
+ #head-line{
   border-bottom: #000000;
   border-style: solid;
-  border-width: 3px;
+  border-width:3px;
   width:60px;
   margin: auto;
  }
@@ -89,27 +108,18 @@ margin-bottom: 10px;
  .amen{
   text-transform: uppercase;
  }
- .amenities-gallery{
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 30px;
-  transition: all .5s;
-  border: none;
+ .zoom{
+  overflow:hidden
+  //transform: translate(-50%,-50%);
  }
- .amenities-gallery img{
-    width: 100%;
-    margin-bottom: -2px;
-    transition: all .5s;
+ .zoom img{
+  //transform: scale(1);
+  transition: 0.7s ;
  }
- .ami-overlay{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  overflow: hidden;
-  transform: translate(-100%, 0);
-  transition: all 1s;
+ .zoom img:hover{
+  transform: scale(1.22);
  }
+
 // .fa-map-marker:before{
 // content:"f041" ;
 // }
@@ -125,3 +135,14 @@ margin-bottom: 10px;
   font-size: 0.8rem;
 }
 
+.zoomin{
+  overflow:hidden
+  //transform: translate(-50%,-50%);
+ }
+ .zoomin img{
+  //transform: scale(1);
+  transition: 0.7s ;
+ }
+ .zoomin img:hover{
+  transform: scale(1.15);
+ }
