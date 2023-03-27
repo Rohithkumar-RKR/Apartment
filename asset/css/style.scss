@@ -149,3 +149,24 @@ margin-bottom: 10px;
  #hie{
   height: 180px;
  }
+
+
+//   .nav-link{
+//   color:#fcf8f8 !important;
+//  }
+ #butt{
+  color:#f7f5f5;
+ }
+
+  .nav-link.active{
+  color:#ffffff;
+  background-color: #f1cf38 !important;
+ }
+
+
+  @media (min-width: 770px) and (max-width: 991.98px) { 
+    #hie{
+      height:202px !important;
+      width:110px;
+    }
+   }
